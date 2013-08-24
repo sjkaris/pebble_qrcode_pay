@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$USER_HOME$/pebble-dev/PebbleSDK-1.12/Android/PebbleKit/PebbleKit.iml" filepath="$USER_HOME$/pebble-dev/PebbleSDK-1.12/Android/PebbleKit/PebbleKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing-2.2 2/android/android.iml" filepath="$PROJECT_DIR$/../zxing-2.2 2/android/android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing-2.2 2/core/core.iml" filepath="$PROJECT_DIR$/../zxing-2.2 2/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing-2.2 2/javase/javase.iml" filepath="$PROJECT_DIR$/../zxing-2.2 2/javase/javase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pebblePayAndroid.iml" filepath="$PROJECT_DIR$/pebblePayAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing-2.2 2/core/test/test.iml" filepath="$PROJECT_DIR$/../zxing-2.2 2/core/test/test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing-2.2 2/zxing.appspot.com/zxing.appspot.com.iml" filepath="$PROJECT_DIR$/../zxing-2.2 2/zxing.appspot.com/zxing.appspot.com.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../zxing-2.2 2/zxingorg/zxingorg.iml" filepath="$PROJECT_DIR$/../zxing-2.2 2/zxingorg/zxingorg.iml" />
+    </modules>
+  </component>
+</project>
+

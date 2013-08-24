@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <TextView android:id="@+id/textview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clover Example Access Token:"
+            android:gravity="center"/>
+    <EditText android:layout_height="wrap_content"
+              android:id="@+id/edittext"
+              android:layout_width="match_parent"/>
+    <Button android:id="@+id/button"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Set token"
+            android:onClick="setToken"/>
+
+    <ImageView android:layout_height="128dp"
+               android:layout_width="128dp"
+               android:id="@+id/image"/>
+</LinearLayout>
+

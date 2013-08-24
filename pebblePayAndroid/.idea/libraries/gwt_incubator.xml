@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gwt-incubator">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../zxing-2.2 2/zxing.appspot.com/war/WEB-INF/lib/gwt-incubator.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
