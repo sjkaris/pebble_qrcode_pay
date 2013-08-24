@@ -33,7 +33,7 @@ public class payActivity extends Activity
   private PebbleKit.PebbleDataReceiver pebblePayReceiver = null;
   private PebbleKit.PebbleNackReceiver pebbleNackReceiver = null;
   private LinkedList<byte[]> chunks;
-  private String access_token;
+  private static String access_token;
   private TextView txt;
   private EditText edt_txt;
   private Button button;
@@ -81,7 +81,7 @@ public class payActivity extends Activity
             isRunning = true;
             JSONObject obj = new JSONObject();
             obj.put("token", access_token);
-            HTTPPostTask post = new HTTPPostTask(obj, "http://clover-example-app.com/get_qr_from_token");
+            HTTPPostTask post = new HTTPPostTask(obj, "http://clover-example-app.appspot.com/get_qr_from_token");
             post.execute();
             JSONObject resp = post.get();
             qr_code = resp.getString("qr_code");

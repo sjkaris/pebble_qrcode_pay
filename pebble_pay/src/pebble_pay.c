@@ -19,7 +19,7 @@ enum {
 static Window s_window;
 static BitmapLayer s_bitmap_layer;
 static GBitmap bitmap;
-static uint8_t qr_code_data[16384];
+static uint8_t qr_code_data[2048];
 static AppContextRef s_app_ctx;
 static bool callbacks_registered;
 int packets;
@@ -67,11 +67,6 @@ static void pebble_pay_init(void) {
       app_message_out_release();
 }
 
-static void display_no_qr() {
-    resource_load(resource_get_handle(RESOURCE_ID_QR_CODE_MISSING), qr_code_data, 512);
-    layer_mark_dirty((Layer*)&s_bitmap_layer);
-}
-
 static void in_received_handler(DictionaryIterator *iter, void *context) {
     Tuple* tuple = dict_find(iter, PAY_KEY_RECIEVE);
     if(tuple) {
@@ -103,14 +98,14 @@ static void window_load(Window* window) {
 
     bitmap = (GBitmap) {
         .addr = qr_code_data,
-        .bounds = GRect(5, 5, 128, 128),
+        .bounds = GRect(14, 14, 128, 128),
         .info_flags = 1,
         .row_size_bytes = 16,
     };
     packets = 0;
     //memset(album_art_data, 0, 512);
     vibes_long_pulse();
-    bitmap_layer_init(&s_bitmap_layer, GRect(8, 10, 128, 128));
+    bitmap_layer_init(&s_bitmap_layer, GRect(22, 34, 100, 100));
     bitmap_layer_set_bitmap(&s_bitmap_layer, &bitmap);
     layer_add_child(window_get_root_layer(window), &s_bitmap_layer.layer);
 }
